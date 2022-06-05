@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tradify">
         <activity
+            android:name=".ui.ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.signin.SigninActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.SplashActivity"
             android:exported="false" />
         <activity
@@ -21,6 +30,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
