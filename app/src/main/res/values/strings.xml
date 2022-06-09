@@ -13,4 +13,18 @@
     <string name="masukkan_nama">Masukkan nama</string>
     <string name="masukkan_telp">Masukkan nomor telepon</string>
     <string name="desc_forgot_pw">Silahkan Masukkan Alamat Email Untuk Menerima Kode Verifikasi</string>
+    <string name="search_home">Mau makan apa hari ini ?</string>
+    <string name="riwayat_scan">Riwayat Scan</string>
+    <string name="nama_produk">Brem Suling Mas</string>
+    <string name="kategori_produk">Olahan Daging</string>
+    <string name="harga_produk">Rp.20.000</string>
+    <string name="food_categories">Kategori</string>
+    <string name="see_all">Lihat semua</string>
+    <string name="txt_category">Aneka Kue</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_scan">Scan</string>
+    <string name="title_profil">Profil</string>
+    <string name="halo">Halo!</string>
+    <string name="namaUser">Riza Adi Kurniawan</string>
 </resources>
