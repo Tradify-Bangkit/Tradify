@@ -26,5 +26,8 @@
     <string name="title_scan">Scan</string>
     <string name="title_profil">Profil</string>
     <string name="halo">Halo!</string>
-    <string name="namaUser">Riza Adi Kurniawan</string>
+    <string name="namaUser">Nama User</string>
+    <string name="ganti_password">Ganti Password</string>
+    <string name="log_out">Log Out</string>
+    <string name="emailUser">Email User</string>
 </resources>

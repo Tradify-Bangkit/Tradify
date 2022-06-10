@@ -10,29 +10,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tradify">
         <activity
+            android:name=".ui.kategori.KategoriActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.HomeActivity"
             android:exported="false"
             android:label="@string/title_activity_home" />
         <activity
-            android:name=".ui.ForgetPasswordActivity"
+            android:name=".ui.forgetpassword.ForgetPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.SignupActivity"
+            android:name=".ui.signup.SignupActivity"
             android:exported="false" />
         <activity
             android:name=".ui.signin.SigninActivity"
-            android:exported="false" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ui.SplashActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data
