@@ -31,4 +31,11 @@
     <string name="log_out">Log Out</string>
     <string name="emailUser">Email User</string>
     <string name="jelajahi">Jelajahi</string>
+    <string name="tv_nama_makanan">Nama Makanan</string>
+    <string name="tv_ringkas_detail_makanan">Ringkasan Makanan</string>
+    <string name="btn_baca">Baca Lebih Detail</string>
+    <string name="btn_keluar">Keluar</string>
+    <string name="tv_detail_makanan">Detail Makanan</string>
+    <string name="tv_asal_makanan">Asal Daerah</string>
+    <string name="tv_kategori_makanan">Kategori Makanan</string>
 </resources>

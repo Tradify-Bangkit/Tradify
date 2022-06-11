@@ -27,6 +27,23 @@
         <entry key="..\:/TUGAS-KULIAH/BANGKIT/Tradify/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/TUGAS-KULIAH/BANGKIT/Tradify/app/src/main/res/layout/fragment_notifications.xml" value="0.33" />
         <entry key="..\:/TUGAS-KULIAH/BANGKIT/Tradify/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/Asus/Downloads/#BismillahJadi/Tradify/app/src/main/res/layout/activity_food_detail.xml" value="0.16" />
+        <entry key="..\:/Users/Asus/Downloads/#BismillahJadi/Tradify/app/src/main/res/layout/activity_forget_password.xml" value="0.136" />
+        <entry key="..\:/Users/Asus/Downloads/#BismillahJadi/Tradify/app/src/main/res/layout/activity_home.xml" value="0.18840579710144928" />
+        <entry key="..\:/Users/Asus/Downloads/#BismillahJadi/Tradify/app/src/main/res/layout/activity_kategori.xml" value="0.18840579710144928" />
+        <entry key="..\:/Users/Asus/Downloads/#BismillahJadi/Tradify/app/src/main/res/layout/activity_list_food.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/Downloads/#BismillahJadi/Tradify/app/src/main/res/layout/activity_main.xml" value="0.18840579710144928" />
+        <entry key="..\:/Users/Asus/Downloads/#BismillahJadi/Tradify/app/src/main/res/layout/activity_signin.xml" value="0.18840579710144928" />
+        <entry key="..\:/Users/Asus/Downloads/#BismillahJadi/Tradify/app/src/main/res/layout/activity_signup.xml" value="0.1711229946524064" />
+        <entry key="..\:/Users/Asus/Downloads/#BismillahJadi/Tradify/app/src/main/res/layout/activity_splash.xml" value="0.18840579710144928" />
+        <entry key="..\:/Users/Asus/Downloads/#BismillahJadi/Tradify/app/src/main/res/layout/banner_carousel_item.xml" value="0.18840579710144928" />
+        <entry key="..\:/Users/Asus/Downloads/#BismillahJadi/Tradify/app/src/main/res/layout/card_category.xml" value="0.18840579710144928" />
+        <entry key="..\:/Users/Asus/Downloads/#BismillahJadi/Tradify/app/src/main/res/layout/card_product_explore.xml" value="0.1911231884057971" />
+        <entry key="..\:/Users/Asus/Downloads/#BismillahJadi/Tradify/app/src/main/res/layout/card_product_riwayat.xml" value="0.25" />
+        <entry key="..\:/Users/Asus/Downloads/#BismillahJadi/Tradify/app/src/main/res/layout/fragment_dashboard.xml" value="0.18840579710144928" />
+        <entry key="..\:/Users/Asus/Downloads/#BismillahJadi/Tradify/app/src/main/res/layout/fragment_home.xml" value="0.18840579710144928" />
+        <entry key="..\:/Users/Asus/Downloads/#BismillahJadi/Tradify/app/src/main/res/layout/fragment_notifications.xml" value="0.18840579710144928" />
+        <entry key="..\:/Users/Asus/Downloads/#BismillahJadi/Tradify/app/src/main/res/layout/item_row_foodlist.xml" value="0.4" />
       </map>
     </option>
   </component>

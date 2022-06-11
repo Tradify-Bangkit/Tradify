@@ -1,5 +1,6 @@
 package com.example.tradify.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.example.tradify.databinding.FragmentHomeBinding
 import com.example.tradify.model.Product
+import com.example.tradify.ui.item.FoodListActivity
 import com.example.tradify.ui.ui.home.HomeViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -40,6 +42,11 @@ class HomeFragment : Fragment() {
         homeViewModel.getProductList()
         homeViewModel.productuser.observe(viewLifecycleOwner) { produk ->
             setProduk(produk)
+        }
+
+        binding.btnExploreAll.setOnClickListener {
+            val intent = Intent (requireActivity(), FoodListActivity::class.java)
+            startActivity(intent)
         }
 
         return root

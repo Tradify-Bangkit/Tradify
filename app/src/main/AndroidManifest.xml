@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tradify">
         <activity
+            android:name=".ui.item.FoodDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.item.FoodListActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.kategori.KategoriActivity"
             android:exported="false" />
         <activity
@@ -27,6 +33,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -35,8 +42,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"

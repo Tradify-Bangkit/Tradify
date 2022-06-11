@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "446722229082",
+    "firebase_url": "https://tradify-351913-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "tradify-351913",
+    "storage_bucket": "tradify-351913.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446722229082:android:fd4e9e87568f9286da2963",
+        "android_client_info": {
+          "package_name": "com.example.tradify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446722229082-65s7r0cggsrfs6ukneh00eho8d78r6fd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tradify",
+            "certificate_hash": "4fefd7e9873c53ce29b6769594ce5512cb24f56a"
+          }
+        },
+        {
+          "client_id": "446722229082-s95jnusv08cruu3pndmv3cos97ntsr9c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tradify",
+            "certificate_hash": "b0cd877c23517d6292a63a4cd122c64d06ad7993"
+          }
+        },
+        {
+          "client_id": "446722229082-3i9pl2rk7dj42uubvre1012hab9f7k2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_uFfru_Bqi9v2LtkKBC2RZWTxb3g4v54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446722229082-3i9pl2rk7dj42uubvre1012hab9f7k2m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
