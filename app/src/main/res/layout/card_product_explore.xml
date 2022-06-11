@@ -20,7 +20,7 @@
             card_view:cardCornerRadius="10dp">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/imgProduct"
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
                 android:scaleType="fitXY"
@@ -57,18 +57,7 @@
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toBottomOf="@+id/cardView" />
 
-        <TextView
-            android:id="@+id/harga_produk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="6dp"
-            android:layout_marginTop="6dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="@string/harga_produk"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toBottomOf="@+id/nama_produk" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

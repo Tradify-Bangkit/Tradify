@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.example.tradify.databinding.FragmentHomeBinding
+import com.example.tradify.model.Product
 import com.example.tradify.ui.ui.home.HomeViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -35,8 +36,18 @@ class HomeFragment : Fragment() {
             .circleCrop()
             .into(binding.imgUser)
 
+//         var anjay = FirebaseClass().getProductList()
+        homeViewModel.getProductList()
+        homeViewModel.productuser.observe(viewLifecycleOwner) { produk ->
+            setProduk(produk)
+        }
 
         return root
+    }
+
+    private fun setProduk(produk: List<Product>) {
+        val adapter = ExploreAdapter(produk)
+        binding.rvExplore.adapter = adapter
     }
 
     override fun onDestroyView() {

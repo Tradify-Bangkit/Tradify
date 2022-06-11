@@ -10,7 +10,6 @@ import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.example.tradify.databinding.FragmentNotificationsBinding
 import com.example.tradify.ui.signin.SigninActivity
-import com.example.tradify.ui.ui.notifications.NotificationsViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
