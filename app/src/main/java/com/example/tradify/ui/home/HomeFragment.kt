@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.example.tradify.databinding.FragmentHomeBinding
 import com.example.tradify.model.Product
-import com.example.tradify.ui.item.FoodListActivity
+import com.example.tradify.ui.fooditem.FoodListActivity
 import com.example.tradify.ui.ui.home.HomeViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth

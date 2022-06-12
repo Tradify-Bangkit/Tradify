@@ -1,4 +1,4 @@
-package com.example.tradify.ui.item
+package com.example.tradify.ui.fooditem
 
 import android.util.Log
 import androidx.lifecycle.LiveData

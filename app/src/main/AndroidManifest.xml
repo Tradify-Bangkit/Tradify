@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tradify">
         <activity
-            android:name=".ui.item.FoodDetailActivity"
+            android:name=".ui.fooditem.FoodDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.item.FoodListActivity"
+            android:name=".ui.fooditem.FoodListActivity"
             android:exported="false" />
         <activity
             android:name=".ui.kategori.KategoriActivity"

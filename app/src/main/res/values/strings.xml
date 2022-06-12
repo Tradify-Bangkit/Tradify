@@ -38,4 +38,6 @@
     <string name="tv_detail_makanan">Detail Makanan</string>
     <string name="tv_asal_makanan">Asal Daerah</string>
     <string name="tv_kategori_makanan">Kategori Makanan</string>
+    <string name="tv_kategori_detail">Kategori</string>
+    <string name="tv_asal_detail">Asal Daerah</string>
 </resources>

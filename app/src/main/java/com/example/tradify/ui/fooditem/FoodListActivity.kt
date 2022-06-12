@@ -1,5 +1,6 @@
-package com.example.tradify.ui.item
+package com.example.tradify.ui.fooditem
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
@@ -28,11 +29,28 @@ class FoodListActivity : AppCompatActivity() {
         foodViewModel.productuser.observe(this) { produk ->
             setProduk(produk)
         }
+
+
     }
 
     private fun setProduk(produk: List<Product>) {
         val adapter = FoodAdapter(produk)
         binding.rvFood.adapter= adapter
+
+        adapter.setOnItemClickCallback(object : FoodAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: Product){
+                showSelectedFood(data)
+            }
+        })
+
+    }
+
+    private fun showSelectedFood(food: Product){
+        val foodDetail = Intent(this@FoodListActivity, FoodDetailActivity::class.java)
+        foodDetail.putExtra(FoodDetailActivity.EXTRA_FOOD,  food)
+        startActivity(foodDetail)
+
+
     }
 
 }
