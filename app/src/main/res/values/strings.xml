@@ -40,4 +40,11 @@
     <string name="tv_kategori_makanan">Kategori Makanan</string>
     <string name="tv_kategori_detail">Kategori</string>
     <string name="tv_asal_detail">Asal Daerah</string>
+    <string name="scan_makanan">Scan Makanan</string>
+    <string name="deskripsi_scan">Foto makananmu di posisi tengah</string>
+    <string name="galeri">Galeri</string>
+    <string name="camera">Camera</string>
+    <string name="upload">Upload</string>
+    <string name="detail_makanan">Detail Makanan</string>
+    <string name="nama_makanan">Nama Makanan</string>
 </resources>

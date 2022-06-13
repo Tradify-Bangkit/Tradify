@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tradify">
         <activity
+            android:name=".ui.camera.CameraAddActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.fooditem.FoodDetailActivity"
             android:exported="false" />
         <activity

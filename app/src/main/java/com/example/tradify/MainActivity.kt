@@ -1,8 +1,8 @@
 package com.example.tradify
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.tradify.databinding.ActivityMainBinding
 import com.example.tradify.ui.signin.SigninActivity
 

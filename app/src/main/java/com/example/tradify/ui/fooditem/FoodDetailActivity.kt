@@ -4,9 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
-import com.example.tradify.R
 import com.example.tradify.databinding.ActivityFoodDetailBinding
-import com.example.tradify.databinding.ActivityListFoodBinding
 import com.example.tradify.model.Product
 import com.example.tradify.ui.HomeActivity
 
