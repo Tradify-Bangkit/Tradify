@@ -13,6 +13,12 @@ class ExploreAdapter(private val listProduct: List<Product>) :
     class ExploreHolder(var binding: CardProductExploreBinding) :
         RecyclerView.ViewHolder(binding.root)
 
+    private lateinit var onItemClickCallback: OnItemClickCallback
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback){
+        this.onItemClickCallback = onItemClickCallback
+    }
+
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ExploreHolder {
         val binding =
             CardProductExploreBinding.inflate(
@@ -31,9 +37,13 @@ class ExploreAdapter(private val listProduct: List<Product>) :
         holder.binding.apply {
             namaProduk.text = nama_produk
             kategoriProduk.text = kategori
-
+        holder.itemView.setOnClickListener { onItemClickCallback.onItemClicked(listProduct[holder.adapterPosition]) }
         }
     }
 
     override fun getItemCount(): Int = listProduct.size
+
+    interface OnItemClickCallback {
+        fun onItemClicked(data: Product)
+    }
 }

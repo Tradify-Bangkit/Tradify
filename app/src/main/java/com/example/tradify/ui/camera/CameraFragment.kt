@@ -22,7 +22,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.tradify.databinding.FragmentCameraBinding
 import com.example.tradify.ml.Model2
-import com.example.tradify.ui.ui.dashboard.DashboardViewModel
+import com.example.tradify.ui.fooditem.FoodDetailActivity
+import com.example.tradify.ui.ui.dashboard.CameraViewModel
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.io.File
@@ -73,17 +74,24 @@ class CameraFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val dashboardViewModel =
-            ViewModelProvider(this).get(DashboardViewModel::class.java)
+        val cameraViewModel =
+            ViewModelProvider(this).get(CameraViewModel::class.java)
 
         _binding = FragmentCameraBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
         binding.apply {
             namaMakanan.isGone = true
+            btnDetailMakanan.isGone = true
             cameraXButton.setOnClickListener { startTakePhoto() }
             galleryButton.setOnClickListener { startGallery() }
-            btnDetailMakanan.setOnClickListener {}
+            btnDetailMakanan.setOnClickListener {
+                cameraViewModel.productuser.observeForever {
+                    cameraViewModel.getProduct()
+                    val foodDetail = Intent(requireActivity(), FoodDetailActivity::class.java)
+                    foodDetail.putExtra(FoodDetailActivity.EXTRA_FOOD, it[0])
+                    startActivity(foodDetail)
+                }
+            }
         }
 
         return root
@@ -192,6 +200,7 @@ class CameraFragment : Fragment() {
             binding.apply {
                 namaMakanan.text = classes[maxPos]
                 namaMakanan.isGone = false
+                btnDetailMakanan.isGone = false
             }
         } catch (e: Exception) {
             Log.e("Camera Exception", e.toString())

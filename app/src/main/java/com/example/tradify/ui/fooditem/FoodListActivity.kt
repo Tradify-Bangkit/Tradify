@@ -17,6 +17,7 @@ class FoodListActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         binding = ActivityListFoodBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -49,7 +50,6 @@ class FoodListActivity : AppCompatActivity() {
         val foodDetail = Intent(this@FoodListActivity, FoodDetailActivity::class.java)
         foodDetail.putExtra(FoodDetailActivity.EXTRA_FOOD,  food)
         startActivity(foodDetail)
-
 
     }
 

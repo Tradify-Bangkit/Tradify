@@ -1,26 +1,23 @@
-package com.example.tradify.ui.ui.home
+package com.example.tradify.ui.ui.dashboard
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.tradify.model.Categories
 import com.example.tradify.model.Product
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
-class HomeViewModel : ViewModel() {
+class CameraViewModel : ViewModel() {
+
     private val _productuser = MutableLiveData<List<Product>>()
     val productuser: LiveData<List<Product>> = _productuser
 
-    private val _categoryuser = MutableLiveData<List<Categories>>()
-    val categoryuser: LiveData<List<Categories>> = _categoryuser
-
-
     val db = Firebase.firestore
 
-    fun getProductList() {
+    fun getProduct() {
         db.collection("products")
+            .whereEqualTo("nama_produk", "Pempek")
             .get()
             .addOnSuccessListener { documents ->
                 val productsList: ArrayList<Product> = ArrayList()
@@ -28,6 +25,7 @@ class HomeViewModel : ViewModel() {
                     val product = i.toObject(Product::class.java)
                     product!!.product_id = i.id
                     productsList.add(product)
+                Log.e("Detail Produk", "${documents.documents}")
                 }
                 _productuser.value = productsList
             }
@@ -35,22 +33,4 @@ class HomeViewModel : ViewModel() {
                 Log.e("Get Product List", "Error while getting product list.", e)
             }
     }
-
-    fun getCategoryList() {
-        db.collection("categories")
-            .get()
-            .addOnSuccessListener { documents ->
-                val categoryList: ArrayList<Categories> = ArrayList()
-                for (i in documents.documents) {
-                    val product = i.toObject(Categories::class.java)
-                    product!!.id = i.id
-                    categoryList.add(product)
-                }
-                _categoryuser.value = categoryList
-            }
-            .addOnFailureListener { e ->
-                Log.e("Get Product List", "Error while getting product list.", e)
-            }
-    }
-
 }
